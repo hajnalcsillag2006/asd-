@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weboldal logikai részeinek meghatározása</title>
+    <style>
+        section {
+            border: 2px solid brown;
+            margin: 5px;
+            padding: 5px 20px;
+        }
+
+        article {
+            background-color: lightgoldenrodyellow;
+        }
+
+        section>p {
+            font-size: 2em;
+            color: red;
+        }
+
+        header {
+            background-color: peru;
+            height: 2cm;
+            text-align: center;
+        }
+
+        nav {
+            width: 80%;
+            border: double 4px darkred;
+            margin: auto;
+        }
+
+        nav>ul>li {
+            display: inline;
+            background-color: orange;
+            color: red;
+
+        }
+
+        footer {
+            background-color: springgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <header>Ez itt a fejléc! (Banner) Ide kerülhet pld. a logó</header>
+    <nav>
+        <h2>
+            Navigációs rész /Innen lehet elérni ebben az esetben a rovatokat/
+        </h2>
+        <ul>
+            <li><a href="#">Rovat 1 (Belföldi hírek)</a></li>
+            <li><a href="#">Rovat 2 (Sport)</a></li>
+            <li><a href="#">Rovat 3 (Egyéb)</a></li>
+        </ul>
+    </nav>
+    <section>
+        <p>Kiemelt híreink /külső section (szakasz)/</p>
+
+        <section>
+            <p>Belföldi hírek /belső section/</p>
+
+            <article>
+                <h2>Látványos videó készült az új magyar harckocsik lövészetéről /article = cikk/</h2>
+                <p>
+                    A harcjárművek az MH 25. Klapka György Lövészdandár 11. Harckocsizászlóaljának kötelékébe
+                    csatlakoztak,
+                    ezért Tatán találkozhatunk velük. A Leopardok átadásáról élőben tudósítottunk:
+                </p>
+            </article>
+
+            <article>
+                <h2>A Magyar Telekom történetének legjelentősebb kötvénykibocsátását hajtotta végre /article/</h2>
+                <p>A Magyar Telekom által tartott mai kötvényaukción:</p>
+                <ul>
+                    <li>a benyújtott összes ajánlat 96,95 milliárd forint volt, </li>
+                    <li>végül a vállalat 70,83 milliárd forint forrást vont be, </li>
+                    <li>a kötvények futamideje 7 év és fix kamatozásúak,</li>
+                    <li> az aukción 1,26 százalékos átlaghozam alakult ki.</li>
+                </ul>
+                <p>A Magyar Telekom vezérigazgatójának, Rékasi Tibornak a nyilatkozata szerint:</p>
+            </article>
+
+            <article>
+                <h2>Müller Cecília elmondta, mely magyar városokban robbanhat be a járvány a következő napokban
+                    /article/</h2>
+                <p>
+                    A naponta közzétett számadatokon túl számos egyéb számadat, elemzés, járványgörbe vizsgálat előtérbe
+                    kerül, megtárgyalásra kerül, az operatív törzs figyelemmel kíséri a változásokat, a járvány
+                    dinamikáját.
+                    Fontos a döntések meghozatalánál az egészségügyi rendszer terheltsége, de számos más szempont is
+                    van. Az
+                    operatív törzs megfogalmazza a javaslatait és a kormány dönt. A holnapi kormányülésen vizsgálják
+                    felül a
+                    döntéseket, mert eltelt két hét a szigorúbb szabályok bevezetése óta – mondta el Müller Cecília.
+                </p>
+            </article>
+
+        </section>
+
+        <section>
+            <p>Sport események /belső section/</p>
+            <article>Cikk 1 /article/</article>
+            <article>Cikk 2 /article/</article>
+            <article>Cikk 3 /article/</article>
+        </section>
+
+    </section>
+    <footer>
+        Ez itt a lábléc!<br>
+        Ide kerülnek pld. Impresszium, elérhetőségek, közösségi média, stb
+    </footer>
+</body>
+
+</html>
